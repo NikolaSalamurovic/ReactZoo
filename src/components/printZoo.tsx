@@ -27,7 +27,7 @@ export const PrintZoo = () => {
                     <h1 className="zooTitle">{animal.name}</h1>
                     <img src={animal.imageUrl} alt="Missing picture of animal" className="zooPicture"/>
                     <p>{animal.shortDescription}</p>
-                    <Link to={`/animals/${animal.id}`} className="zooLink">Läs mer om {animal.name}</Link>
+                    <Link to={`/zoo/${animal.id}`} className="zooLink">Läs mer om {animal.name}</Link>
                 </li>
             )}
         )}

@@ -15,8 +15,8 @@ ReactDOM.render(
     <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<App/>}/>
-          <Route path='/animals' element={<PrintZoo/>}/>
-          <Route path='/animals/:id' element={<AnimalPage/>}/>
+          <Route path='/zoo' element={<PrintZoo/>}/>
+          <Route path='/zoo/:id' element={<AnimalPage/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Route>
     </Routes>

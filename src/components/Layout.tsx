@@ -6,7 +6,7 @@ export const Layout= () => {
         <>
             <header className="headerContainer">
                 <Link to="/" className="headerLink">Startsida</Link>
-                <Link to="/animals" className="headerLink">ZooList</Link>
+                <Link to="/zoo" className="headerLink">ZooList</Link>
             </header>
 
             <body>
