@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: bold;
+}
+.headerLink:visited{
+  text-decoration: none;
+  color: rgb(77, 77, 236);
+}
+.frontTitle{
+  text-align: center;
+  position: relative;
+  top: 15%;
+  font-size: 3rem;  
+  font-weight: bold;
+}
+.frontInfo{
+  text-align: center;
+  position: relative;
+  top: 10%;
+  font-size: 1rem;
+}
+.backGround{
+  height: 90vh;
+  background-image: url('https://cdn.pixabay.com/photo/2020/04/08/10/18/nature-5016781_960_720.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.zooAnimals{
+  border: 1px solid black;
+  width: 50%;
+  margin-bottom: 1%;
+  list-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zooTitle{
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.zooLink{
+  font-weight: bold;
+}
+.zooLink:visited{
+  text-decoration: none;
+  color: rgb(77, 77, 236);
+}
+.zooPicture{
+  width: 100%;
+  height: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.printZooPicture{
+  width: 400px;
+  height: 400px;
+}
+.printAnimal{
+  margin-left: 1%;
+  font-size: 15px;
+}
+.printTitle{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.notFoundBody{
+  height: 90vh;
+}
+.notFound{
+  text-align: center;
+  position: relative;
+  top: 40%;
+  font-size: 3rem;
 }

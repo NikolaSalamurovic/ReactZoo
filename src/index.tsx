@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { PrintZoo } from './components/printZoo';
+import { AnimalPage } from './components/animalPage';
+import { Layout } from './components/Layout';
+import { NotFound } from './components/notfound';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<App/>}/>
+          <Route path='/animals' element={<PrintZoo/>}/>
+          <Route path='/animals/:id' element={<AnimalPage/>}/>
+          <Route path='*' element={<NotFound/>}/>
+        </Route>
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

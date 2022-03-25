@@ -1,26 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className='backGround'>
+      <p className='frontTitle'>Välkommen till detta React-Zoo</p>
+      <p className='frontInfo'>Klicka gärna på ZooList för att komma vidare till en lista med våra djur.</p>
     </div>
-  );
+  )
 }
 
 export default App;
